@@ -70,7 +70,11 @@ public class Transaction {
         return formatter.format(amount);
 
     @Override
-    public String toString(){
-        DateTimeFormatter formatter=DateTimeFormatter.ofPattern("yy"))
+    public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
+        return String.format(
+                "Transaction[ID=%s, Account=%s, Amount=%s, Location=%s, Merchant=%s, Time=%s, Flagged=%s]",
+                transactionId, accountId, formatIndianCurrency(amount), location, merchantName,
+                timestamp.format(formatter), isFlagged ? "YES" : "NO");
     }
 }
