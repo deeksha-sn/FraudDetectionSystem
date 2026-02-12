@@ -78,3 +78,4 @@ public class Transaction {
                 timestamp.format(formatter), isFlagged ? "YES" : "NO");
     }
 }
+}
