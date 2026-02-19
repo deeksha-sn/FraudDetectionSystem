@@ -5,8 +5,6 @@ import java.time.format.DateTimeFormatter;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-import javax.print.DocFlavor.STRING;
-
 public class Transaction {
     private String transactionId;
     private String accountId;
@@ -17,8 +15,8 @@ public class Transaction {
     private String category;
     private boolean isFlagged;
 
-    public Transaction(String transactionId, String accountId, double amount, String location, String merchantName,
-            String category) {
+    public Transaction(String transactionId, String accountId, double amount,
+            String location, String merchantName, String category) {
         this.transactionId = transactionId;
         this.accountId = accountId;
         this.amount = amount;
@@ -68,6 +66,7 @@ public class Transaction {
     private String formatIndianCurrency(double amount) {
         NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
         return formatter.format(amount);
+    }
 
     @Override
     public String toString() {
@@ -77,5 +76,4 @@ public class Transaction {
                 transactionId, accountId, formatIndianCurrency(amount), location, merchantName,
                 timestamp.format(formatter), isFlagged ? "YES" : "NO");
     }
-}
 }
