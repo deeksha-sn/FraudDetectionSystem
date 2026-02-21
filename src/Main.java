@@ -14,13 +14,12 @@ public class Main {
         // Create an Indian bank account
         Account account = new Account(
                 "ACC789456",
-                "Rajesh Kumar",
-                "rajesh.kumar@email.com",
+                "Suresh Kumar",
+                "suresh.kumar@email.com",
                 "+91-9876543210",
                 250000.00,
-                "Mumbai",
-                "HDFC Bank - Andheri Branch");
-
+                "Bangalore",
+                "SBI - Koramangala Branch");
         System.out.println("📋 Account Created:");
         System.out.println(account);
         System.out.println("\n" + "=".repeat(65));
