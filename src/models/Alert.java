@@ -49,7 +49,7 @@ public class Alert {
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy hh:mm:ss a");
         return String.format(
-                "\n╔════════════════ धोखाधड़ी अलर्ट / FRAUD ALERT ════════════════╗\n" +
+                "╔════════════════ ವಂಚನೆ ಎಚ್ಚರಿಕೆ / FRAUD ALERT ════════════════╗\n" +
                         "║ Alert ID: %-50s ║\n" +
                         "║ Type: %-54s ║\n" +
                         "║ Severity: %-50s ║\n" +
