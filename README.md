@@ -5,21 +5,6 @@ This system analyzes transactions and detects fraudulent activities using multip
 
 ---
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [How It Works](#how-it-works)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [OOP Concepts](#oop-concepts)
-- [Future Enhancements](#future-enhancements)
-- [Author](#author)
-
----
-
 ## ✨ Features
 
 ### 🔍 Multi-Algorithm Fraud Detection
