@@ -64,7 +64,7 @@ public class Transaction {
     }
 
     private String formatIndianCurrency(double amount) {
-        NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.of("en", "IN"));
         return formatter.format(amount);
     }
 

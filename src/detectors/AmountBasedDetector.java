@@ -15,7 +15,7 @@ public class AmountBasedDetector implements FraudDetector {
         double amount = transaction.getAmount();
         double avgAmount = account.getAverageTransactionAmount();
 
-        NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
+        NumberFormat formatter = NumberFormat.getCurrencyInstance(Locale.of("en", "IN"));
 
         if (avgAmount > 0 && amount > (avgAmount * THRESHOLD_MULTIPLIER)) {
             fraudReason = String.format(
